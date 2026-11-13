@@ -269,3 +269,4 @@ body.lead-sent .sticky{display:none}
 .points+.zero{margin-top:48px}
 @media (max-width:640px){.points{margin-top:32px}.points+.zero{margin-top:32px}}
 .hero h1,.title{text-wrap:balance}
+@media (max-width:640px){.hero h1{font-size:29px;letter-spacing:-1.1px;margin-top:12px}.hero-box{padding-top:20px}}
