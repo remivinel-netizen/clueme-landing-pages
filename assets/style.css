@@ -253,3 +253,6 @@ section{padding:96px 0}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body.lead-sent .sticky{display:none}
+.proof .sub{margin-top:0}
+.proof .rating{margin-top:72px}
+@media (max-width:640px){.proof .rating{margin-top:52px}}
