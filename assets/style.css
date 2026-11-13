@@ -15,6 +15,7 @@ em{font-family:Lora,serif;font-style:italic;font-weight:400}
 .btn-light{background:#fff;color:var(--brown)}
 .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #111;outline-offset:3px}
 .title{font-size:clamp(32px,3.75vw,48px);line-height:1.1;letter-spacing:-1.5px;font-weight:500}
+.title em,.sub em{color:var(--gold-d)}
 .lead{margin-top:18px;max-width:620px;color:var(--muted);font-size:17px}
 section{padding:96px 0}
 
@@ -120,12 +121,12 @@ section{padding:96px 0}
 .points i{font-size:26px;color:#5E7350}
 .points h3{margin-top:10px;font-size:17px;font-weight:600}
 .points p{margin-top:4px;font-size:15px;color:var(--muted)}
-.zero{margin-top:20px;background:#111;color:#fff;border-radius:16px;padding:44px 48px;display:grid;grid-template-columns:auto 1fr;gap:28px 56px;align-items:center}
+.zero{margin-top:20px;background:#111;color:#fff;border-radius:16px;padding:44px 48px;display:flex;flex-wrap:wrap;justify-content:center;gap:28px 56px;align-items:center}
 .zero .big{font-size:clamp(72px,9vw,120px);font-weight:600;letter-spacing:-5px;line-height:.9;color:var(--gold);white-space:nowrap}
 .zero h3{font-size:28px;font-weight:500;letter-spacing:-.8px;line-height:1.15}
 .zero p{margin-top:10px;max-width:520px;color:rgba(245,242,237,.75)}
-.zero ul{grid-column:1/-1;margin:0;padding:26px 0 0;list-style:none;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.zero li{display:flex;gap:12px}
+.zero ul{flex:0 0 100%;margin:0;padding:26px 0 0;list-style:none;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zero li{display:flex;justify-content:center;gap:12px}
 .zero li i{flex:none;font-size:22px;color:var(--gold)}
 .zero li b{display:block;font-weight:600}
 .zero li span{font-size:14.5px;color:rgba(245,242,237,.7)}
@@ -198,7 +199,9 @@ section{padding:96px 0}
   .stats ul{grid-template-columns:1fr 1fr}
   .stats li:nth-child(3){border-left:0}
   .stats li:nth-child(n+3){border-top:1px solid var(--line)}
-  .zero{grid-template-columns:1fr;padding:36px 32px}
+  .zero{flex-direction:column;align-items:flex-start;padding:36px 32px}
+  .zero ul{width:100%}
+  .zero li{justify-content:flex-start}
 }
 @media (max-width:640px){
   .shell{width:calc(100% - 32px)}
