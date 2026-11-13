@@ -270,3 +270,5 @@ body.lead-sent .sticky{display:none}
 @media (max-width:640px){.points{margin-top:32px}.points+.zero{margin-top:32px}}
 .hero h1,.title{text-wrap:balance}
 @media (max-width:640px){.hero h1{font-size:29px;letter-spacing:-1.1px;margin-top:12px}.hero-box{padding-top:20px}}
+@media (min-width:641px){.hero h1{font-size:clamp(34px,3.8vw,52px);line-height:1.1}.hero-sub{margin-top:26px}.ticks{margin-top:32px;gap:13px}.hero-proof{margin-top:36px}}
+@media (min-width:1024px){.hero-box{gap:64px;padding:64px 52px}}
