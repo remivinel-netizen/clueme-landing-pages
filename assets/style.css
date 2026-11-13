@@ -268,3 +268,4 @@ body.lead-sent .sticky{display:none}
 .points h3{margin-top:16px}
 .points+.zero{margin-top:48px}
 @media (max-width:640px){.points{margin-top:32px}.points+.zero{margin-top:32px}}
+.hero h1,.title{text-wrap:balance}
